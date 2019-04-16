@@ -1,0 +1,271 @@
+html, body {
+    min-height: 100%;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #263339;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.site-header {
+    border-bottom: 2px solid rgba(155, 155, 155, 0.5);
+}
+
+.site-header a {
+  color: #263339;
+  transition: color 0.15s ease-in-out;
+}
+
+.site-header a.active {
+  font-weight: bold;
+}
+
+.site-header a:hover {
+  color: #999;
+  text-decoration: none;
+}
+
+.section-1 {
+  background: #263339 url(../images/code.png);
+  position: relative;
+  min-height: 30rem;
+}
+
+.btn {
+    border-radius: 9em;
+    border-width: 2px;
+}
+
+.intro .btn,
+.btn-outline-secondary {
+  color: #263339;
+  border-color: rgba(38, 51, 57, 0.5);
+}
+
+.intro .btn:hover {
+    cursor:pointer;
+  color: #fff;
+  background-color: #263339;
+}
+
+.contact-me {
+    display: none;
+    width: 100%;
+    top:0;
+    left: 0%;
+    background-color: #999;
+}
+
+.form-control:focus {
+    border-color: #fff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
+  }
+
+.contact-me .btn,
+.contact-me .btn-outline-secondary {
+  color: #fff;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-me .btn:hover {
+cursor: pointer;
+  color: #999;
+  background-color: #fff;
+}
+
+.intro {
+  width: 100%;
+  background-color: #d3e3d2;
+  position: relative;
+}
+
+.aboutme {
+  width: 100%;
+  position: relative;
+
+  margin-bottom: 2rem;
+}
+
+.skills {
+  color: #fff;
+  background-color: #86735b;
+}
+
+.projects {
+  background-color: #fff;
+}
+
+.github-projects {
+  max-width: 40rem;
+}
+
+.github-projects .card {
+  border-color: #263339;
+}
+
+.img-wrapper {
+  background-image: url(../images/github-logo-github-iop-project.png);
+  background-size: 100%;
+  border-radius: 5px;
+}
+
+.img-wrapper img {
+  transition: all 0.2s ease-in-out;
+}
+
+.img-wrapper:hover img {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #999;
+  position: relative;
+}
+
+.card-content {
+  width: 30rem;
+}
+
+.icon-container {
+
+    width: 3.7rem;
+    height: 3.7rem;
+    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    
+    border-radius: 50%;
+
+    transition: all 0.3s ease-in-out
+}
+
+.icon-container i{
+    color: #fff;
+    position:relative;
+    top: calc(50% - 1rem); /* 50% - 3/4 of icon height */
+}
+
+.icon-container:hover {
+    border-width: 0px;
+    border-color: #fff;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.icon-container:hover i{
+    color: #999;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+svg.slant-top {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  height: 50px;
+}
+
+svg.side-l-arrow {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 50px;
+  height: 100%;
+}
+
+svg.side-r-arrow {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 100%;
+  }
+
+.card-text {
+  font-size: 12px;
+}
+
+.text-lines {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+  grid-gap: 30px;
+}
+
+.text-lines:before,
+.text-lines:after {
+  content: "";
+  border-top: 3px solid;
+}
+
+.push-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (min-width: 991.98px) {
+  .intro {
+    width: 50%;
+  }
+
+  .intro div {
+    margin-left: 10%;
+  }
+
+  .contact-me {
+    width: 50%;
+    left: 50%;    
+}
+
+  .aboutme {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .contact-me {
+      left: 0;
+      z-index: 1;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .section-1 {
+      min-height: 32rem;
+  }
+  
+    .text-lines {
+    grid-gap: 10px;
+  }
+
+  .intro h1 {
+      font-size: 7vw;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media screen and (min-height: 709.98px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+    }
+}

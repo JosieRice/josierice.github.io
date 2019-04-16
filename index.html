@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
+
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <title>Coleton Annett - Portfolio</title>
+  </head>
+  <body>
+    <div id="top" class="display-none"></div>
+    <nav class="site-header sticky-top py-2 bg-white">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between"
+      >
+        <a class="p-2 mx-auto d-sm-block d-md-none">COLETON ANNETT</a>
+        <a class="p-2 mx-5 d-none d-md-inline-block active" href="#top">TOP</a>
+        <a class="p-2 mr-5 d-none d-md-inline-block" href="#about-me">ABOUT</a>
+        <a class="p-2 mr-5 d-none d-md-inline-block" href="#skills">SKILLS</a>
+        <a class="p-2 mr-5 d-none d-md-inline-block" href="#projects"
+          >PROJECTS</a
+        >
+        <a
+          id="show-contact-link"
+          class="p-2 mr-5 d-none d-md-inline-block"
+          href="#top"
+          >CONTACT</a
+        >
+      </div>
+    </nav>
+
+    <section id="banner">
+      <div
+        class="d-flex justify-content-end flex-row overflow-hidden position-relative text-left section-1"
+      >
+        <div
+          id="contact-form"
+          class="position-absolute h-100 contact-me p-md-5 p-4"
+        >
+          <div class="mt-5 mb-5 ml-md-3 mr-5 pl-4">
+            <h2 class="text-white mb-4 text-lines">Contact Me</h2>
+            <form
+              accept-charset="UTF-8"
+              action="https://usebasin.com/f/11595121922c"
+              enctype="multipart/form-data"
+              method="POST"
+            >
+              <div class="form-row mb-1">
+                <div class="form-group col-md-6">
+                  <input
+                    name="name"
+                    type="text"
+                    class="name form-control"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    id="email"
+                    name="email"
+                    class="email form-control"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  class="textarea form-control"
+                  rows="6"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+
+              <input type="hidden" id="gotcha" name="_gotcha" />
+              <div class="form-row flex-nowrap">
+                <div class="form-group col-md-6 pr-3 mb-1 ">
+                  <button type="submit" class="mt-2 btn btn-outline-secondary">
+                    Submit
+                  </button>
+                </div>
+                <div class="form-group col-md-6">
+                  <p
+                    id="hide-contact-form"
+                    class="mt-2 btn btn-outline-secondary float-right"
+                  >
+                    Hide
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="p-md-5 p-4 intro">
+          <svg
+            class="side-l-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <polygon
+              class="svg--sm"
+              fill="#D3E3D2"
+              points="100 100,0 50,100 0"
+            />
+          </svg>
+          <div class="my-5 ml-md-10 pt-5 pt-md-0">
+            <h2>Coleton Annett</h2>
+            <p>Student and Aspiring Full Stack Developer</p>
+            <h1 class="mt-4">
+              Student and self-taught web developer based in Victoria, BC
+            </h1>
+            <p class="mt-4 btn btn-outline-secondary" id="show-contact-btn">
+              Contact Me Now
+            </p>
+          </div>
+          <svg
+            class="side-r-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <polygon class="svg--sm" fill="#D3E3D2" points="0 100,100 50,0 0" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me">
+      <div class="d-md-flex flex-md-equal pl-md-3 mb-5 justify-content-center">
+        <div
+          class="aboutme mr-md-2 px-3 pt-md-4 px-md-2 pr-md-5 text-left overflow-hidden"
+        >
+          <div class="my-3 py-3">
+            <h1 class="display-5 text-center font-weight-bold text-lines">
+              ABOUT ME
+            </h1>
+            <p class="mx-auto mt-md-4 mt-4">
+              Born in Sechelt, BC but raised in Sydney, Australia
+              <br /><br />
+              Back programming and web development when I was 15, eventually teaming
+              up with a friend to make a website for our school that would let Year 10
+              students choose their senior classes. Developing has been a passion ever since
+              <br /><br />
+              I have recently finished my 2nd year of a BSc in Computer Science
+              at the University of Victoria. My focus is on Software Engineering
+              <br /><br />
+              I’ve recently become absorbed by web application pen-testing and spend most of my
+              time learning as much as possible. I also enjoy creating and
+              designing dessert/pastry dishes when I have the time (and equipment)
+            </p>
+          </div>
+        </div>
+        <div
+          class="d-none d-lg-block mr-md-3 pt-md-4 pl-md-2 pr-md-5overflow-hidden"
+        >
+          <div class="p-3 ">
+            <img
+              src="personal_pic.jpg"
+              width="400px"
+              height="400px"
+              style="width: 100% \9"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="d-flex skills w-100 position-relative justify-content-center">
+        <svg
+          class="slant-top"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon fill="#86735B" points="0 100,50 0,100 100" />
+        </svg>
+        <div class="px-3 px-md-2 mb-5 text-center overflow-hidden">
+          <div class="mt-4 mb-5">
+            <h1 class="display-5 font-weight-bold text-lines text-white">
+              SKILLS
+            </h1>
+            <p class="mt-md-4 mt-4 text-white">
+              I learnt PHP as my first language when I was 15, from there I've
+              been constantly finding more ways to build.
+            </p>
+            <p class="text-white">
+              The frontend of this site is hosted on GitHub Pages and uses Bootstrap
+              4 as well as JQuery for both animation & API queries
+            </p>
+          </div>
+
+          <img src="images/skills.png" width="900px" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div
+        class="d-flex projects w-100 mb-5 position-relative justify-content-center"
+      >
+        <svg
+          class="slant-top"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon fill="white" points="0 0,50 100,100 0, 100 100, 0 100" />
+        </svg>
+        <div class="px-3 px-md-2 mb-5 text-center overflow-hidden">
+          <div class="pt-5 mb-5">
+            <h1 class="display-5 font-weight-bold text-lines">
+              RECENT PROJECTS
+            </h1>
+            <p class="mx-auto mt-md-4 mt-4">
+              Recent side-projects I've worked on to learn specific
+              topics/concepts
+            </p>
+          </div>
+
+          <div id="project-list" class="github-projects text-left">
+            <!-- GENERATED CARDS GO HERE -->
+          </div>
+
+          <a
+            class="mt-4 btn btn-outline-secondary"
+            href="https://github.com/Locrian24"
+            >Go To GitHub/Locrian24</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="d-flex footer mt-2 w-100 position-relative justify-content-center"
+    >
+      <svg
+        class="slant-top"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon fill="#999" points="0 100,50 0,100 100" />
+      </svg>
+      <div class="px-3 px-md-2 mb-3 text-center overflow-hidden">
+        <div class="mt-4 mb-3">
+          <h1 class="display-5 font-weight-bold text-lines text-white">
+            THANK YOU FOR CHECKING ME OUT
+          </h1>
+        </div>
+
+        <div class="my-4 overflow-hidden row justify-content-center">
+          <div class="col-2 col-sm-1 p-0 mr-3">
+            <a href="https://www.instagram.com/cannett738/?hl=en">
+              <div class="icon-container">
+                <i class="fab fa-instagram fa-2x"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-2 col-sm-1 p-0 mr-3">
+            <a href="#">
+              <div class="icon-container">
+                <i class="fab fa-twitter fa-2x"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-2 col-sm-1 p-0 mr-3">
+            <a href="https://www.linkedin.com/in/coleton-annett-945775163/">
+              <div class="icon-container">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-2 col-sm-1 p-0">
+            <a href="https://github.com/Locrian24">
+              <div class="icon-container">
+                <i class="fab fa-github fa-2x"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
