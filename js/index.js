@@ -1,9 +1,8 @@
 $(document).ready(function() {
-  
   //populate project section with 3 most recent github projects (GitHup API)
   $.ajax({
     dataType: "json",
-    url: "https://api.github.com/users/Locrian24/repos?sort=created",
+    url: "https://api.github.com/users/cbot83/repos?sort=created",
     success: function(res) {
       $.each(res, function(i, obj) {
         if (i > 2) return;

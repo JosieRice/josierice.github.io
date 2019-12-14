@@ -1,5 +1,6 @@
-html, body {
-    min-height: 100%;
+html,
+body {
+  min-height: 100%;
 }
 
 * {
@@ -12,7 +13,7 @@ html, body {
 }
 
 .site-header {
-    border-bottom: 2px solid rgba(155, 155, 155, 0.5);
+  border-bottom: 2px solid rgba(155, 155, 155, 0.5);
 }
 
 .site-header a {
@@ -32,12 +33,12 @@ html, body {
 .section-1 {
   background: #263339 url(../images/code.png);
   position: relative;
-  min-height: 30rem;
+  min-height: 500px;
 }
 
 .btn {
-    border-radius: 9em;
-    border-width: 2px;
+  border-radius: 9em;
+  border-width: 2px;
 }
 
 .intro .btn,
@@ -47,23 +48,24 @@ html, body {
 }
 
 .intro .btn:hover {
-    cursor:pointer;
+  cursor: pointer;
   color: #fff;
   background-color: #263339;
 }
 
 .contact-me {
-    display: none;
-    width: 100%;
-    top:0;
-    left: 0%;
-    background-color: #999;
+  display: none;
+  width: 100%;
+  top: 0;
+  left: 0%;
+  background-color: #999;
 }
 
 .form-control:focus {
-    border-color: #fff;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
-  }
+  border-color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(255, 255, 255, 0.6);
+}
 
 .contact-me .btn,
 .contact-me .btn-outline-secondary {
@@ -73,7 +75,7 @@ html, body {
 }
 
 .contact-me .btn:hover {
-cursor: pointer;
+  cursor: pointer;
   color: #999;
   background-color: #fff;
 }
@@ -138,34 +140,33 @@ cursor: pointer;
 }
 
 .icon-container {
+  width: 3.7rem;
+  height: 3.7rem;
+  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 
-    width: 3.7rem;
-    height: 3.7rem;
-    border: 2px solid rgb(255, 255, 255);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    -webkit-background-clip: padding-box; /* for Safari */
-    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-    
-    border-radius: 50%;
+  border-radius: 50%;
 
-    transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out;
 }
 
-.icon-container i{
-    color: #fff;
-    position:relative;
-    top: calc(50% - 1rem); /* 50% - 3/4 of icon height */
+.icon-container i {
+  color: #fff;
+  position: relative;
+  top: calc(50% - 1rem); /* 50% - 3/4 of icon height */
 }
 
 .icon-container:hover {
-    border-width: 0px;
-    border-color: #fff;
-    background-color: #fff;
-    cursor: pointer;
+  border-width: 0px;
+  border-color: #fff;
+  background-color: #fff;
+  cursor: pointer;
 }
 
-.icon-container:hover i{
-    color: #999;
+.icon-container:hover i {
+  color: #999;
 }
 
 h2 {
@@ -188,12 +189,12 @@ svg.side-l-arrow {
 }
 
 svg.side-r-arrow {
-    position: absolute;
-    top: 0;
-    right: -50px;
-    width: 50px;
-    height: 100%;
-  }
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 50px;
+  height: 100%;
+}
 
 .card-text {
   font-size: 12px;
@@ -215,8 +216,8 @@ svg.side-r-arrow {
 }
 
 .push-bottom {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (min-width: 991.98px) {
@@ -230,8 +231,8 @@ svg.side-r-arrow {
 
   .contact-me {
     width: 50%;
-    left: 50%;    
-}
+    left: 50%;
+  }
 
   .aboutme {
     width: 60%;
@@ -240,22 +241,22 @@ svg.side-r-arrow {
 
 @media screen and (max-width: 991.98px) {
   .contact-me {
-      left: 0;
-      z-index: 1;
+    left: 0;
+    z-index: 1;
   }
 }
 
 @media screen and (max-width: 767.98px) {
   .section-1 {
-      min-height: 32rem;
+    min-height: 32rem;
   }
-  
-    .text-lines {
+
+  .text-lines {
     grid-gap: 10px;
   }
 
   .intro h1 {
-      font-size: 7vw;
+    font-size: 7vw;
   }
 }
 
@@ -264,8 +265,8 @@ svg.side-r-arrow {
 }
 
 @media screen and (min-height: 709.98px) {
-    .footer {
-        position: absolute;
-        bottom: 0;
-    }
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
