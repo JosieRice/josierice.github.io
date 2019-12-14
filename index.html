@@ -23,6 +23,89 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!-- Word Cloud -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/wordCloud.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/material.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <!-- Chart code -->
+    <script>
+      am4core.ready(function() {
+        // Themes begin
+        // am4core.useTheme(am4themes_material);
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+
+        var chart = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
+        chart.fontFamily = "Courier New";
+        var series = chart.series.push(
+          new am4plugins_wordCloud.WordCloudSeries()
+        );
+        series.randomness = 0.1;
+        series.rotationThreshold = 0.5;
+
+        series.data = [
+          {
+            tag: "javascript",
+            count: "170"
+          },
+          {
+            tag: "typescript",
+            count: "150"
+          },
+          {
+            tag: "react",
+            count: "91"
+          },
+          {
+            tag: "css",
+            count: "111"
+          },
+          {
+            tag: "html5",
+            count: "129"
+          },
+          {
+            tag: "node.js",
+            count: "80"
+          },
+          {
+            tag: "json",
+            count: "90"
+          },
+          {
+            tag: "mongodb",
+            count: "60"
+          },
+          {
+            tag: "firebase",
+            count: "110"
+          },
+          {
+            tag: "git",
+            count: "127"
+          },
+          {
+            tag: "postgresql",
+            count: "70"
+          }
+        ];
+
+        series.dataFields.word = "tag";
+        series.dataFields.value = "count";
+
+        series.heatRules.push({
+          target: series.labels.template,
+          property: "fill",
+          min: am4core.color("#e2e2e2"),
+          max: am4core.color("#007bff"),
+          dataField: "value"
+        });
+      }); // end am4core.ready()
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link
       rel="stylesheet"
@@ -203,23 +286,20 @@
     </section>
 
     <section id="skills">
-      <div class="d-flex skills w-100 position-relative justify-content-center">
+      <div class="skills w-100 position-relative justify-content-center">
         <svg
           class="slant-top"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
         >
-          <polygon fill="#86735B" points="0 100,50 0,100 100" />
+          <polygon fill="#575757" points="0 100,50 0,100 100" />
         </svg>
         <div class="px-3 px-md-2 mb-5 text-center overflow-hidden">
-          <div class="mt-4 mb-5">
-            <h1 class="display-5 font-weight-bold text-lines text-white">
-              SKILLS
-            </h1>
-          </div>
-
-          <img src="images/skills.png" width="900px" class="img-fluid" />
+          <h1 class="display-5 font-weight-bold text-lines text-white">
+            SKILLS
+          </h1>
+          <div id="chartdiv"></div>
         </div>
       </div>
     </section>

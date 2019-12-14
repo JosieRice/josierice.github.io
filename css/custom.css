@@ -95,7 +95,7 @@ body {
 
 .skills {
   color: #fff;
-  background-color: #86735b;
+  background-color: #575757;
 }
 
 .projects {
@@ -269,4 +269,9 @@ svg.side-r-arrow {
     position: absolute;
     bottom: 0;
   }
+}
+
+#chartdiv {
+  width: 100%;
+  height: 400px;
 }
