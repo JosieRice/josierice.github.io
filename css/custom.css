@@ -1,14 +1,16 @@
-html,
-body {
-  min-height: 100%;
-}
-
 * {
   font-family: "Montserrat", sans-serif;
-  color: #263339;
+  color: #575757;
 }
 
-.container {
+.intro {
+  width: 100%;
+  min-height: 500px;
+  background-color: #d3e3d2;
+  position: relative;
+}
+
+/* .container {
   max-width: 960px;
 }
 
@@ -80,20 +82,16 @@ body {
   background-color: #fff;
 }
 
-.intro {
-  width: 100%;
-  background-color: #d3e3d2;
-  position: relative;
-}
+
 
 .aboutme {
   width: 100%;
   position: relative;
 
   margin-bottom: 2rem;
-}
+} */
 
-.skills {
+/* .skills {
   color: #fff;
   background-color: #575757;
 }
@@ -137,22 +135,22 @@ body {
 
 .card-content {
   width: 30rem;
-}
+} */
 
-.icon-container {
+/* .icon-container {
   width: 3.7rem;
   height: 3.7rem;
   border: 2px solid rgb(255, 255, 255);
   border: 2px solid rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-
-  border-radius: 50%;
-
+  -webkit-background-clip: padding-box; */
+  /* for Safari */
+  /* background-clip: padding-box;  */
+  /* for IE9+, Firefox 4+, Opera, Chrome */
+  /* border-radius: 50%;
   transition: all 0.3s ease-in-out;
-}
+} */
 
-.icon-container i {
+/* .icon-container i {
   color: #fff;
   position: relative;
   top: calc(50% - 1rem); /* 50% - 3/4 of icon height */
@@ -167,9 +165,9 @@ body {
 
 .icon-container:hover i {
   color: #999;
-}
+} */
 
-h2 {
+/* h2 {
   font-weight: bold;
 }
 
@@ -186,9 +184,9 @@ svg.side-l-arrow {
   left: -50px;
   width: 50px;
   height: 100%;
-}
+} */
 
-svg.side-r-arrow {
+/* svg.side-r-arrow {
   position: absolute;
   top: 0;
   right: -50px;
@@ -269,9 +267,9 @@ svg.side-r-arrow {
     position: absolute;
     bottom: 0;
   }
-}
+} */
 
-#chartdiv {
+/* #chartdiv {
   width: 100%;
   height: 400px;
-}
+} */
