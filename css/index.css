@@ -1,0 +1,59 @@
+* {
+  color: #575757;
+}
+
+.banner {
+  margin-top: 28px !important;
+}
+
+.intro {
+  width: 100%;
+  height: 375px;
+  background-color: #d3e3d2;
+  padding: 5% 80px !important;
+  z-index: 1;
+}
+
+.code-block {
+  height: 375px;
+  width: 105%;
+  overflow: hidden;
+}
+
+.contact-me {
+  position: absolute !important;
+  right: 0px;
+  z-index: 0;
+  padding: 5% 8% 0 5% !important;
+  background-color: #f9f9f9;
+  height: 375px;
+}
+
+#footer {
+  background: #575757;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.fixed-height {
+  resize: none !important;
+}
+
+.icons {
+  border-top: none !important;
+}
+
+.centered {
+  text-align: center;
+  margin-top: 20px;
+}
+
+svg.side-l-arrow {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 50px;
+  height: 100%;
+}

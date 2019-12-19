@@ -1,5 +1,5 @@
+//populate project section with 6 most recent github projects (GitHup API)
 $(document).ready(function() {
-  //populate project section with 6 most recent github projects (GitHup API)
   $.ajax({
     dataType: "json",
     url: "https://api.github.com/users/cbot83/repos?sort=updated&order=desc",
@@ -25,7 +25,7 @@ $(document).ready(function() {
   });
 
   //show contact form on btn/nav click
-  $("#show-contact-btn, #show-contact-link").click(function() {
+  $("#show-contact-btn").click(function() {
     $(".contact-me").css({ display: "block" });
     if ($(window).width() >= 991.98) {
       $(".contact-me")

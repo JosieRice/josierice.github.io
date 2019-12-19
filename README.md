@@ -2,4 +2,11 @@
 
 forked from => https://locrian24.github.io
 
-Written with **Bootstrap** with **JQuery** for GitHub API queries and general animation. Everything else is standard **HTML5** and **CSS3** (for Bootstrap overwrites).
+Used as an excuse to use Semantic UI and promote myself as a developer.
+
+TODO:
+
+- look for codesandbox api
+- look for goodreads api
+- better code highlighting theme
+- toggle between views of skills (different breakdowns), and make wordcloud larger
