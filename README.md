@@ -6,6 +6,8 @@ Used as an excuse to use Semantic UI and promote myself as a developer.
 
 TODO:
 
+- center recent projects cards
+- fix mobile view
 - look for codesandbox api
 - look for goodreads api
 - better code highlighting theme
