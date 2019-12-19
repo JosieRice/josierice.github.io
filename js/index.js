@@ -1,42 +1,24 @@
 $(document).ready(function() {
-  //populate project section with 3 most recent github projects (GitHup API)
+  //populate project section with 6 most recent github projects (GitHup API)
   $.ajax({
     dataType: "json",
     url: "https://api.github.com/users/cbot83/repos?sort=updated&order=desc",
     success: function(res) {
       $.each(res, function(i, obj) {
-        if (i > 2) return;
-        let date = new Date(Date.parse(obj.created_at));
+        if (i > 5) return;
+        let date = new Date(obj.created_at).toDateString();
 
         $("#project-list").append(
-          `<div class="card mb-3">
-            <div class="card-body py-3 px-4">
-            <div class="row">
-                <div class="col pl-2">
-                <div class="img-wrapper">
-                    <img
-                    src="images/git-code.png"
-                    height="100%"
-                    class="img-thumbnail fit-image"
-                    />
-                </div>
-                </div>
-                <div
-                class="card-content pt-2 pl-1 justify-content-center align-self-center mr-4"
-                >
-                <h5 class="card-title mb-2 font-weight-bold">
-                    <a href="${obj.html_url}">${obj.name}</a>
-                </h5>
-                <p class="card-text mb-1">
-                    ${obj.description}
-                </p>
-                <p class="card-text">
-                    <small class="text-muted">Created: ${date.toLocaleString()}</small>
-                </p>
-                </div>
+          `<div class="card">
+            <div class="content">
+              <a href="${obj.html_url}" target="_blank">
+                <h3 class="header">${obj.name}</h3>
+                <p class="meta">${obj.description}</p>
+                <p class="meta">Language: ${obj.language}</p>
+                <p class="meta">Last Updated: ${date}</p>
+              </a>
             </div>
-            </div>
-        </div>`
+          </div>`
         );
       });
     }
