@@ -31,6 +31,7 @@
 
 #footer {
   background: #575757;
+  padding: 1px 10px 21px 10px;
 }
 
 .white {
@@ -56,4 +57,30 @@ svg.side-l-arrow {
   left: -50px;
   width: 50px;
   height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.stackable.grid > .column.row > .column,
+  .ui.stackable.grid > .row > .column {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #contact-form {
+    padding: 30px 50px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .intro {
+    text-align: center !important;
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .code-block {
+    margin-bottom: 0px;
+  }
 }
