@@ -188,3 +188,11 @@ pre .variable.instance {
 .language-js .variable.super {
   color: #66d9ef;
 }
+
+.rainbow {
+  color: #e2e2e2;
+}
+
+.function.call {
+  color: #a462f9;
+}
