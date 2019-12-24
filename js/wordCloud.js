@@ -90,6 +90,10 @@ am4core.ready(function() {
     {
       tag: "Semantic UI",
       count: "50"
+    },
+    {
+      tag: "jQuery",
+      count: "50"
     }
   ];
 
@@ -99,8 +103,8 @@ am4core.ready(function() {
   series.heatRules.push({
     target: series.labels.template,
     property: "fill",
-    min: am4core.color("#575757"),
-    max: am4core.color("lightgrey"),
+    min: am4core.color("#e2e2e2"),
+    max: am4core.color("#bdd8ef"),
     dataField: "value"
   });
 });
