@@ -18,6 +18,8 @@
   height: 375px;
   width: 105%;
   overflow: hidden;
+  padding: 0 15px;
+  margin: 0;
 }
 
 .contact-me {
@@ -64,23 +66,25 @@ svg.side-l-arrow {
   .ui.stackable.grid > .row > .column {
     padding: 0 !important;
   }
-}
 
-@media only screen and (max-width: 767px) {
+  .intro {
+    text-align: center !important;
+    height: 260px !important;
+  }
+
   #contact-form {
     padding: 30px 50px !important;
   }
-}
 
-@media only screen and (max-width: 767px) {
-  .intro {
-    text-align: center !important;
-    height: 300px !important;
-  }
-}
-
-@media only screen and (max-width: 767px) {
   .code-block {
     margin-bottom: 0px;
+  }
+
+  #show-contact-btn {
+    display: none;
+  }
+
+  #hide-contact-form {
+    display: none;
   }
 }

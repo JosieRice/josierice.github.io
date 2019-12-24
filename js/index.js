@@ -27,31 +27,23 @@ $(document).ready(function() {
   //show contact form on btn/nav click
   $("#show-contact-btn").click(function() {
     $(".contact-me").css({ display: "block" });
-    if ($(window).width() >= 991.98) {
+    if ($(window).width() >= 767) {
       $(".contact-me")
         .css({ left: "50%" })
         .animate({ left: "0" }, "slow");
-    } else if ($(window).width() < 991.98) {
-      $(".contact-me")
-        .css({ left: "100%" })
-        .animate({ left: "0" }, "slow");
+      $("#show-contact-btn").addClass("disabled");
     }
   });
 
   //hiding contact form
   $("#hide-contact-form").click(function() {
-    if ($(window).width() >= 991.98) {
+    if ($(window).width() >= 767) {
       $(".contact-me")
         .css({ left: "0" })
         .animate({ left: "50%" }, "slow", function() {
           $(this).css({ display: "none" });
         });
-    } else if ($(window).width() < 991.98) {
-      $(".contact-me")
-        .css({ left: "0" })
-        .animate({ left: "100%" }, "slow", function() {
-          $(this).css({ display: "none" });
-        });
+      $("#show-contact-btn").removeClass("disabled");
     }
   });
 
