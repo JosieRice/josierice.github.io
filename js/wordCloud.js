@@ -1,6 +1,6 @@
 am4core.ready(function() {
   // Themes begin
-  //   am4core.useTheme(am4themes_material);
+  // am4core.useTheme(am4themes_material);
   am4core.useTheme(am4themes_animated);
   // Themes end
 
@@ -13,15 +13,19 @@ am4core.ready(function() {
   series.data = [
     {
       tag: "Javascript",
-      count: "170"
-    },
-    {
-      tag: "Typescript",
       count: "150"
     },
     {
-      tag: "React JS",
-      count: "91"
+      tag: "Typescript",
+      count: "180"
+    },
+    {
+      tag: "Webpack",
+      count: "90"
+    },
+    {
+      tag: "React",
+      count: "150"
     },
     {
       tag: "CSS 3",
@@ -40,32 +44,16 @@ am4core.ready(function() {
       count: "90"
     },
     {
-      tag: "Mongo DB",
-      count: "60"
-    },
-    {
       tag: "Firebase",
       count: "110"
     },
     {
       tag: "Git",
-      count: "127"
-    },
-    {
-      tag: "postgresql",
-      count: "70"
-    },
-    {
-      tag: "Express JS",
-      count: "50"
-    },
-    {
-      tag: "Stencil JS",
-      count: "50"
+      count: "115"
     },
     {
       tag: "GraphQL",
-      count: "150"
+      count: "80"
     },
     {
       tag: "CSS in JS",
@@ -73,11 +61,11 @@ am4core.ready(function() {
     },
     {
       tag: "Final Cut Pro",
-      count: "100"
+      count: "80"
     },
     {
       tag: "Figma",
-      count: "150"
+      count: "120"
     },
     {
       tag: "UX Design",
@@ -87,18 +75,21 @@ am4core.ready(function() {
       tag: "Photoshop",
       count: "50"
     },
-    {
-      tag: "Semantic UI",
-      count: "50"
-    },
-    {
-      tag: "jQuery",
-      count: "50"
-    }
   ];
 
   series.dataFields.word = "tag";
   series.dataFields.value = "count";
+
+  series.labels.paddingTop = 5;
+
+//   // Configure labels
+// series.labels.template.setAll({
+//   paddingTop: 5,
+//   paddingBottom: 5,
+//   paddingLeft: 5,
+//   paddingRight: 5,
+//   // fontFamily: "Courier New"
+// });
 
   series.heatRules.push({
     target: series.labels.template,
