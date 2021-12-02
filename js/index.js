@@ -2,7 +2,7 @@
 $(document).ready(function() {
   $.ajax({
     dataType: "json",
-    url: "https://api.github.com/users/cbot83/repos?sort=updated&order=desc",
+    url: "https://api.github.com/users/josierice/repos?sort=updated&order=desc",
     success: function(res) {
       $.each(res, function(i, obj) {
         if (i > 5) return;

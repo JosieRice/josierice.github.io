@@ -65,7 +65,7 @@ svg.side-l-arrow {
   height: 400px;
 }
 
-#skills {
+#skills, #footer-title {
   padding-top: 16px;
   margin-bottom: 0;
   color: #fff;
